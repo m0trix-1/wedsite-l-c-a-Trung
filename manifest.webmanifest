@@ -1,0 +1,22 @@
+{
+  "name": "The Cozy Bean Coffee Shop",
+  "short_name": "CozyBean",
+  "description": "Trải nghiệm hương vị cà phê đậm đà tại Cozy Bean.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1a120b",
+  "theme_color": "#3c2a21",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
