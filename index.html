@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cozy Bean - Cửa Hàng Cà Phê Ấm Áp</title>
+    <meta name="description" content="Trải nghiệm hương vị cà phê đậm đà, không gian ấm cúng tại The Cozy Bean.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.webmanifest">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-mug-hot"></i> CozyBean
+            </a>
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active">Trang Chủ</a>
+                <a href="#about" class="nav-link">Giới Thiệu</a>
+                <a href="#menu" class="nav-link">Thực Đơn</a>
+                <a href="#contact" class="nav-link">Liên Hệ</a>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Khởi Đầu Ngày Mới Với Tách Cà Phê Đậm Đà</h1>
+            <p>Hương thơm nguyên bản từ những hạt cà phê Arabica và Robusta chất lượng nhất được tuyển chọn thủ công.</p>
+            <a href="#menu" class="btn">Khám Phá Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <h2>Về Chúng Tôi</h2>
+                    <p>Tại <strong>The Cozy Bean</strong>, chúng tôi không chỉ bán cà phê, chúng tôi chia sẻ niềm đam mê. Mỗi ly cà phê phục vụ bạn là hành trình chắt lọc tinh hoa từ nông trại cao nguyên đến chiếc tách gốm ấm áp trên tay bạn.</p>
+                    <p>Không gian yên tĩnh, âm nhạc nhẹ nhàng và hương thơm say đắm sẽ là nơi lý tưởng để bạn làm việc hoặc thư giãn cùng bạn bè.</p>
+                </div>
+                <div class="about-placeholder">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Thực Đơn Nổi Bật</h2>
+            
+            <!-- Bộ lọc Menu -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Tất Cả</button>
+                <button class="filter-btn" data-filter="coffee">Cà Phê</button>
+                <button class="filter-btn" data-filter="tea">Trà Trái Cây</button>
+                <button class="filter-btn" data-filter="cake">Bánh Ngọt</button>
+            </div>
+
+            <!-- Lưới Sản phẩm -->
+            <div class="products-grid" id="products-container">
+                <!-- Javascript sẽ render dữ liệu sản phẩm ở đây -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Liên Hệ</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Thông Tin Liên Hệ</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> 123 Đường Cà Phê, Quận 1, TP. Hồ Chí Minh</p>
+                    <p><i class="fa-solid fa-phone"></i> +84 123 456 789</p>
+                    <p><i class="fa-solid fa-envelope"></i> contact@cozybean.com</p>
+                    <p><i class="fa-solid fa-clock"></i> Mở cửa: 07:00 AM - 10:00 PM</p>
+                </div>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất.');">
+                    <input type="text" placeholder="Họ và tên" required autocomplete="name">
+                    <input type="email" placeholder="Email" required autocomplete="email">
+                    <textarea placeholder="Tin nhắn của bạn..." rows="5" required></textarea>
+                    <button type="submit" class="btn">Gửi Liên Hệ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 The Cozy Bean. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Detail Product Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="modal-close">&times;</span>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Nội dung chi tiết sản phẩm sẽ render từ modal.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
